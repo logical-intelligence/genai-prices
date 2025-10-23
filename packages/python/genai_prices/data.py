@@ -2130,7 +2130,7 @@ providers: list[Provider] = [
                 name='GPT-5 Pro',
                 description="GPT-5 Pro is OpenAI's most advanced model for complex reasoning, coding, and technical tasks. It offers superior performance for demanding applications.",
                 context_window=400000,
-                prices=ModelPrice(input_mtok=Decimal('15'), cache_read_mtok=Decimal('1.5'), output_mtok=Decimal('120')),
+                prices=ModelPrice(input_mtok=Decimal('15'), output_mtok=Decimal('120')),
             ),
             ModelInfo(
                 id='o1',

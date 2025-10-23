@@ -3925,7 +3925,6 @@ export const data: Provider[] = [
         context_window: 400000,
         prices: {
           input_mtok: 15,
-          cache_read_mtok: 1.5,
           output_mtok: 120,
         },
       },
