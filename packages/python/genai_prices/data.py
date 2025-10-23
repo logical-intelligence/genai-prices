@@ -2126,7 +2126,14 @@ providers: list[Provider] = [
             ),
             ModelInfo(
                 id='gpt-5-pro',
-                match=ClauseOr(or_=[ClauseEquals(equals='gpt-5-pro'), ClauseStartsWith(starts_with='gpt-5-pro-')]),
+                match=ClauseOr(
+                    or_=[
+                        ClauseEquals(equals='gpt-5-pro'),
+                        ClauseStartsWith(starts_with='gpt-5-pro-'),
+                        ClauseEquals(equals='openai-responses:gpt-5-pro'),
+                        ClauseEquals(equals='responses:gpt-5-pro'),
+                    ]
+                ),
                 name='GPT-5 Pro',
                 description="GPT-5 Pro is OpenAI's most advanced model for complex reasoning, coding, and technical tasks. It offers superior performance for demanding applications.",
                 context_window=400000,

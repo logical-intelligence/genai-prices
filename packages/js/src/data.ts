@@ -3920,6 +3920,12 @@ export const data: Provider[] = [
             {
               starts_with: 'gpt-5-pro-',
             },
+            {
+              equals: 'openai-responses:gpt-5-pro',
+            },
+            {
+              equals: 'responses:gpt-5-pro',
+            },
           ],
         },
         context_window: 400000,
