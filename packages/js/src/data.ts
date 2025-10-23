@@ -3908,6 +3908,28 @@ export const data: Provider[] = [
         },
       },
       {
+        id: 'gpt-5-pro',
+        name: 'GPT-5 Pro',
+        description:
+          "GPT-5 Pro is OpenAI's most advanced model for complex reasoning, coding, and technical tasks. It offers superior performance for demanding applications.",
+        match: {
+          or: [
+            {
+              equals: 'gpt-5-pro',
+            },
+            {
+              starts_with: 'gpt-5-pro-',
+            },
+          ],
+        },
+        context_window: 400000,
+        prices: {
+          input_mtok: 15,
+          cache_read_mtok: 1.5,
+          output_mtok: 120,
+        },
+      },
+      {
         id: 'o1',
         name: 'o1',
         description: 'O1 is a model that offers a balance between cost and performance.',
